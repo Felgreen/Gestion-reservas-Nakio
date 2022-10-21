@@ -2,6 +2,14 @@
   padding: 0 2rem;
 }
 
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -70,7 +78,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 850px;
 }
 
 .card {
@@ -81,8 +89,13 @@
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  transition: all 2 ease;
+  max-width: 400px;
+}
+
+.cardDescription {
+  display: none;
+  transition: all 2s ease;
 }
 
 .card:hover,
@@ -90,6 +103,10 @@
 .card:active {
   color: #0070f3;
   border-color: #0070f3;
+}
+
+.card:hover .cardDescription {
+  display: flex;
 }
 
 .card h2 {

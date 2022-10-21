@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
@@ -13,51 +13,44 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://nextjs.org">MecaNacho!</a>
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <p className={styles.description}></p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="https://calendly.com/nacho-coppa/30min" className={styles.card}>
+            <h2>Basic Service &rarr;</h2>
+            <p className={styles.cardDescription}>Replacement: Oil, oil filter, fuel filter, air filter.</p>
+            <p className={styles.cardDescription}>Visual inspection: Brakes, steering components, suspension and liquid levels.</p>
           </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <h2>Extend Car Life Service &rarr;</h2>
+            <p className={styles.cardDescription}>Basic Service + Injector cleaner, oil flush, tire pressure, acc belt.</p>
           </a>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="https://github.com/vercel/next.js/tree/canary/examples" className={styles.card}>
+            <h2>Pre Sell Service &rarr;</h2>
+            <p className={styles.cardDescription}>Engine bay wash, dent removal.</p>
           </a>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+          <a href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app" className={styles.card}>
+            <h2>4wd Upgrade &rarr;</h2>
+            <p className={styles.cardDescription}>
+              Ask for a quote on awnings, solar panel, external battery, water storage, lift kits, suspension upgrade for heavy weights, tire size upgrades for off roading, and more.
             </p>
+          </a>
+
+          <a href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app" className={styles.card}>
+            <h2>Whats this noise?? &rarr;</h2>
+            <p className={styles.cardDescription}>If you dont know whats going on with your car and want to get inspected.</p>
           </a>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app" target="_blank" rel="noopener noreferrer">
           Powered by{' '}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
@@ -65,5 +58,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+  );
 }
