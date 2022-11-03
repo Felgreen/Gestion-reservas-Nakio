@@ -1,35 +1,72 @@
-import React from 'react'
+import React from "react";
 
-const Services = () => {
-  return (
-    <div className='flex pt-32 flex-col justify-center w-full p-10 items-center'>
-        
-        <div className="inline-flex justify-center items-center w-full">
-            <hr className="my-8 w-64 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
-            <span className="absolute left-1/2 px-3 font-medium text-gray-900 bg-white -translate-x-1/2 dark:text-white dark:bg-gray-900">Reserve now</span>
-            <hr className="my-8 w-64 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
-        </div>
-           <div className='flex'>
-            <div className="inline-flex space-x-8">
-                    <button className="bg-gray-300  text-white font-bold py-2 px-4 ">
-                        opcion1
-                    </button>
-                    <button className="bg-gray-300 text-white font-bold py-2 px-4 ">
-                        opcion2
-                    </button>
-                    <button className="bg-gray-300  text-white font-bold py-2 px-4 ">
-                        opcion4
-                    </button>
+const Services = ({option}) => {
+    console.log(option)
+
+    switch(option) {
+        case 'ejemplo1':
+            return (
+                <div className="flex flex-col justify-center w-full p-10 items-center space-y-3">
+                    <div className="inline-flex justify-center items-center w-full">
+                        <hr className="my-8 w-64 h-px bg-gray-200 border-0 dark:bg-gray-700" />
+                        <h1 className="text-2xl sm:text-6xl font-bold text-[#F36E21]">Basic service</h1>
+                        <hr className="my-8 w-64 h-px bg-gray-200 border-0 dark:bg-gray-700" />
+                    </div>
+                    <div className="flex">
+                        <p className="text-2xl sm:text-2xl font-bold text-white max-w-[700px]">
+                            Replace of: oil, oil filter, fuel filter, air filter <br></br>
+                            Visual inspection of: breaks, steering components, suspension, liquid levels
+                        </p>
+                    </div>
+                    <div>
+                        <button className="pointer-events-auto rounded-md bg-indigo-600 py-2 px-3 text-[0.8125rem] font-semibold leading-5 text-white hover:bg-indigo-500">Reservar turno</button>
+                    </div>
                 </div>
-           </div>
-           {/* este div seria para mostrar la info con los botones que tenias antes. **/}
-           <div>
+            )
+        break;
+        case 'ejemplo2':
+            return (
+                <div className="flex flex-col justify-center w-full p-10 items-center space-y-3">
+                    <div className="inline-flex justify-center items-center w-full">
+                        <hr className="my-8 w-64 h-px bg-gray-200 border-0 dark:bg-gray-700" />
+                        <h1 className="text-2xl sm:text-6xl font-bold text-[#F36E21]">Extend my car life service:</h1>
+                        <hr className="my-8 w-64 h-px bg-gray-200 border-0 dark:bg-gray-700" />
+                    </div>
+                    <div className="flex">
+                        <p className="text-2xl sm:text-2xl font-bold text-white max-w-[700px]">
+                            Basic service + injector cleaner, oil flush, tire pressure, acc belt.
+                        </p>
+                    </div>
+                    <div>
+                        <button className="pointer-events-auto rounded-md bg-indigo-600 py-2 px-3 text-[0.8125rem] font-semibold leading-5 text-white hover:bg-indigo-500">Reservar turno</button>
+                    </div>
+                </div>
+            )
+        break;
+        case 'ejemplo3':
+            return (
+                <div className="flex flex-col justify-center w-full p-10 items-center space-y-3">
+                    <div className="inline-flex justify-center items-center w-full">
+                        <hr className="my-8 w-64 h-px bg-gray-200 border-0 dark:bg-gray-700" />
+                        <h1 className="text-2xl sm:text-6xl font-bold text-[#F36E21]">Titulo ejemplo 3</h1>
+                        <hr className="my-8 w-64 h-px bg-gray-200 border-0 dark:bg-gray-700" />
+                    </div>
+                    <div className="flex">
+                        <p className="text-2xl sm:text-4xl font-bold text-white max-w-[700px]">
+                            Subtitulo.
+                        </p>
+                    </div>
+                    <div>
+                        <button className="pointer-events-auto rounded-md bg-indigo-600 py-2 px-3 text-[0.8125rem] font-semibold leading-5 text-white hover:bg-indigo-500">Reservar turno</button>
+                    </div>
+                </div>
+            )
+        break
+        default: null;
+    }
+  
+};
 
-           </div>
-       
-                    
-    </div>
-  )
-}
+export default Services;
 
-export default Services
+

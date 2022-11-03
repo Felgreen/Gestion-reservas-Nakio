@@ -1,20 +1,11 @@
-
-import Navbar from 'components/ui/Navbar'
-import Hero from 'components/ui/Hero'
-import Services from 'components/ui/Services'
-
-
-
+import Navbar from "components/ui/Navbar";
+import Hero from "components/ui/Hero";
 
 export default function Home() {
   return (
-    <div>
-      <Navbar/>
-      <Hero/>
-      <Services/>
-    
-  
+    <div className="flex flex-col">
+      <Navbar />
+      <Hero />
     </div>
-    
-  )
+  );
 }

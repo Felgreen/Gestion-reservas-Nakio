@@ -1,20 +1,22 @@
-import React from 'react'
-import Logo from '../../public/assets/logo.png'
-import Image from 'next/image'
+import React from "react";
+import Logo from "../../public/assets/logo.png";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#161417] text-white'>
-        <div>
-        <Image style={{width:'50px'}} 
+    <div className="w-full h-[80px] flex justify-between items-center px-6 bg-[#161417] text-white">
+      <div className="flex items-center">
+        <Image
+          style={{ width: "50px" }}
           src={Logo}
           alt="piucture of th"
           width={50}
           height={50}
         />
-        </div>
+        <p className="text-2xl text-[#F36E21] ml-3">Hola Soy Nacho</p>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
