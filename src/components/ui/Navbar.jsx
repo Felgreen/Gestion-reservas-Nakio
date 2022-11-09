@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="w-full h-[80px] flex justify-between items-center px-6 bg-[#161417] text-white">
-      <div className="flex items-center">
+    <div className="w-full h-[80px] flex flex-row justify-between items-center px-6 bg-[#161417] text-white">
+      <div className="flex flex-row items-center">
         <Image
           style={{ width: "50px" }}
           src={Logo}

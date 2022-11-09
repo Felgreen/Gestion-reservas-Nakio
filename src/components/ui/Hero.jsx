@@ -8,9 +8,7 @@ const Hero = () => {
   const [option, setOption] = useState(null)
 
   const handleOptions = (e) => {
-    console.log('entre')
     setOption(e)
-    console.log(option)
   }
 
   return (
@@ -25,72 +23,87 @@ const Hero = () => {
             {" "}
             Tambien surfeo.
           </p>
-          <div className="border-transparent border-2 rounded flex flex-row justify-evenly items-center">
-            <div className="max-w-sm rounded  overflow-hidden shadow-lg p-10 hover:scale-105 ease-in duration-300" name="ejemplo1" onClick={() => handleOptions('ejemplo1')}>
+          <div className="border-transparent border-2 rounded flex flex-row flex-wrap justify-evenly items-center">
+            <div className="max-w-sm rounded overflow-hidden shadow-md p-4 m-4 hover:scale-105 ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="basic" onClick={() => handleOptions('basic')}>
               {/* <Image src={Background} alt="card" /> */}
-              <div className="px-6 py-4">
+              <div className="px-2 py-2 pb-5">
                 <div className="font-bold text-xl mb-2">
-                  Ejemplo servicios 1
+                  <h2>Basic</h2>
                 </div>
-                <p className="text-white text-base">
-                  Lorem ipsum dolor sit amet
-                </p>
               </div>
-              <div className="px-6 pt-4 pb-2">
+              <div className="px-2 pt-1 pb-1">
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-orange-500 mr-2 mb-2">
-                  SOS fix
+                  Filters replacements
                 </span>
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-orange-500 mr-2 mb-2">
-                  4 x 4 SOS
+                  Visual inspection
+                </span>
+              </div>
+            </div>
+            <div className="max-w-sm rounded  overflow-hidden shadow-md p-4 m-4 hover:scale-105 ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="extend" onClick={() => handleOptions('extend')}>
+              {/* <Image src={Background} alt="card" /> */}
+              <div className="px-2 py-2">
+                <div className="font-bold text-xl mb-2">
+                  <h2>Extend car life</h2>
+                </div>
+              </div>
+              <div className="px-2 pb-1">
+                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-orange-500 mr-2 mb-2">
+                  Basic +
+                </span>
+                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-orange-500 mr-2 mb-2">
+                  Deeper inspection
+                </span>
+              </div>
+            </div>
+            <div className="max-w-sm rounded  overflow-hidden shadow-md p-4 m-4 hover:scale-105 ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="presell" onClick={() => handleOptions('presell')}>
+              {/* <Image src={Background} alt="card" /> */}
+              <div className="px-2 py-2">
+                <div className="font-bold text-xl mb-2">
+                  <h2>Pre sell</h2>
+                </div>
+              </div>
+              <div className="px-2 pb-1">
+                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-orange-500 mr-2 mb-2">
+                  Buyers portfolio
+                </span>
+                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-orange-500 mr-2 mb-2">
+                  Deep wash
                 </span>
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-orange-500 mr-2 mb-2">
                   Roadside assitance
                 </span>
               </div>
             </div>
-
-            <div className="max-w-sm rounded  overflow-hidden shadow-lg p-10 hover:scale-105 ease-in duration-300" name="ejemplo2" onClick={() => handleOptions('ejemplo2')}>
+            <div className="max-w-sm rounded  overflow-hidden shadow-md p-4 m-4 hover:scale-105 ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="4wd" onClick={() => handleOptions('4wd')}>
               {/* <Image src={Background} alt="card" /> */}
-              <div className="px-6 py-4">
+              <div className="px-2 py-2">
                 <div className="font-bold text-xl mb-2">
-                  Ejemplo servicios 2
+                  <h2>4wd upgrade</h2>
                 </div>
-                <p className="text-white text-base">
-                  Lorem ipsum dolor sit amet
-                </p>
               </div>
-              <div className="px-6 pt-4 pb-2">
+              <div className="px-2 pb-1">
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-orange-500 mr-2 mb-2">
-                  SOS fix
+                  Lift kits
                 </span>
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-orange-500 mr-2 mb-2">
-                  4 x 4 SOS
+                  Solar panels
                 </span>
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-orange-500 mr-2 mb-2">
-                  Roadside assitance
+                  Water storage
                 </span>
               </div>
             </div>
-
-            <div className="max-w-sm rounded  overflow-hidden shadow-lg p-10 hover:scale-105 ease-in duration-300" name="ejemplo3" onClick={() => handleOptions('ejemplo3')}>
+            <div className="max-w-sm rounded  overflow-hidden shadow-md p-4 m-4 hover:scale-105 ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="noise" onClick={() => handleOptions('noise')}>
               {/* <Image src={Background} alt="card" /> */}
-              <div className="px-6 py-4">
+              <div className="px-2 py-2">
                 <div className="font-bold text-xl mb-2">
-                  Ejemplo servicios 3
+                  <h2>Whats that noise?</h2>
                 </div>
-                <p className="text-white text-base">
-                  Lorem ipsum dolor sit amet
-                </p>
               </div>
-              <div className="px-6 pt-4 pb-2">
+              <div className="px-2 pb-1">
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-orange-500 mr-2 mb-2">
                   SOS fix
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-orange-500 mr-2 mb-2">
-                  4 x 4 SOS
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-orange-500 mr-2 mb-2">
-                  Roadside assitance
                 </span>
               </div>
             </div>
@@ -99,7 +112,7 @@ const Hero = () => {
       </div>
     </section>
     {
-      option ? <Services option={option} /> : null
+      option ? <Services option={option} /> : <Services option={'ejemplo1'}/>
     }
     </>
   );
