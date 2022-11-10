@@ -6,33 +6,37 @@ const Services = ({option}) => {
     switch(option) {
         case 'basic':
             return (
-                <div className="flex flex-col justify-center w-full p-10 items-center space-y-3">
-                    <div className="inline-flex justify-center items-center w-full">
-                        <hr className="my-8 w-64 h-px bg-gray-200 border-0 dark:bg-gray-700" />
-                        <h1 className="text-2xl sm:text-6xl font-bold text-[#F36E21]">Basic service</h1>
-                        <hr className="my-8 w-64 h-px bg-gray-200 border-0 dark:bg-gray-700" />
-                    </div>
-                    <div className="flex flex-col max-w-[700px]">
-                        <p className="text-2xl sm:text-2xl font-bold text-white max-w-[700px]">
-                        This service includes all the primary care your vehicle needs to keep you on the move and avoid expensive unwanted surprises. 
-                        </p>
+                <section id="bottom">
+                     <a href="#top"><i class="fa fa-arrow-circle-up fixed text-7xl z-50 right-5 bottom-5 cursor-pointer text-white" ></i></a>
+                     <div className="flex flex-col justify-center w-full p-10 items-center space-y-3">
+                        <div className="inline-flex justify-center items-center w-full">
+                            <hr className="my-8 w-64 h-px bg-gray-200 border-0 dark:bg-gray-700" />
+                            <h1 className="text-2xl sm:text-6xl font-bold text-[#F36E21]">Basic service</h1>
+                            <hr className="my-8 w-64 h-px bg-gray-200 border-0 dark:bg-gray-700" />
+                        </div>
+                        <div className="flex flex-col max-w-[700px]">
+                            <p className="text-2xl sm:text-2xl font-bold text-white max-w-[700px]">
+                            This service includes all the primary care your vehicle needs to keep you on the move and avoid expensive unwanted surprises. 
+                            </p>
+                            <br></br>
+                            <ul>
+                                <li>- Oil / oil filter change</li>
+                                <li>- Replace Air Filter</li>
+                                <li>- Replace Fuel Filter</li>
+                                <li>- Visual Inspection of breaks, steering components, suspension and liquid levels.</li>
+                            </ul>
+                        </div>
                         <br></br>
-                        <ul>
-                            <li>- Oil / oil filter change</li>
-                            <li>- Replace Air Filter</li>
-                            <li>- Replace Fuel Filter</li>
-                            <li>- Visual Inspection of breaks, steering components, suspension and liquid levels.</li>
-                        </ul>
+                        <div>
+                            <a href="https://calendly.com/nacho-coppa/basic-service" className="pointer-events-auto rounded-md bg-indigo-600 py-2 px-3 text-[1.5rem] font-semibold leading-5 text-white hover:bg-indigo-500">Reservar turno</a>
+                        </div>
                     </div>
-                    <br></br>
-                    <div>
-                        <a href="https://calendly.com/nacho-coppa/basic-service" className="pointer-events-auto rounded-md bg-indigo-600 py-2 px-3 text-[1.5rem] font-semibold leading-5 text-white hover:bg-indigo-500">Reservar turno</a>
-                    </div>
-                </div>
-            );
+                </section>
+               );
         case 'extend':
             return (
-                <div className="flex flex-col justify-center w-full p-10 items-center space-y-3">
+                <section id="bottom">
+                    <div className="flex flex-col justify-center w-full p-10 items-center space-y-3">
                     <div className="inline-flex justify-center items-center w-full">
                         <hr className="my-8 w-64 h-px bg-gray-200 border-0 dark:bg-gray-700" />
                         <h1 className="text-2xl sm:text-6xl font-bold text-[#F36E21]">Extend my car life service:</h1>
@@ -57,10 +61,12 @@ const Services = ({option}) => {
                         <a href="https://calendly.com/nacho-coppa/extend-my-life-car" className="pointer-events-auto rounded-md bg-indigo-600 py-2 px-3 text-[1.5rem] font-semibold leading-5 text-white hover:bg-indigo-500">Reservar turno</a>
                     </div>
                 </div>
+                </section>
             );
         case 'presell':
             return (
-                <div className="flex flex-col justify-center w-full p-10 items-center space-y-3">
+                <section id="bottom">
+                    <div className="flex flex-col justify-center w-full p-10 items-center space-y-3">
                     <div className="inline-flex justify-center align-center items-center w-full">
                         <hr className="my-8 w-64 h-px bg-gray-200 border-0 dark:bg-gray-700" />
                         <h1 className="text-2xl sm:text-6xl font-bold text-[#F36E21]">Pre sell service</h1>
@@ -90,10 +96,13 @@ const Services = ({option}) => {
                         <a href="https://calendly.com/nacho-coppa/pre-sell-service" className="pointer-events-auto rounded-md bg-indigo-600 py-2 px-3 text-[1.5rem] font-semibold leading-5 text-white hover:bg-indigo-500">Reservar turno</a>
                     </div>
                 </div>
+                </section>
+                
             );
         case '4wd':
             return (
-                <div className="flex flex-col justify-center w-full p-10 items-center space-y-3">
+                <section id="bottom">
+                    <div className="flex flex-col justify-center w-full p-10 items-center space-y-3">
                     <div className="inline-flex justify-center items-center w-full">
                         <hr className="my-8 w-64 h-px bg-gray-200 border-0 dark:bg-gray-700" />
                         <h1 className="text-2xl sm:text-6xl font-bold text-[#F36E21]">4wd upgrade</h1>
@@ -119,10 +128,13 @@ const Services = ({option}) => {
                         <a href="https://calendly.com/nacho-coppa/4wd-upgrade" className="pointer-events-auto rounded-md bg-indigo-600 py-2 px-3 text-[1.5rem] font-semibold leading-5 text-white hover:bg-indigo-500">Reservar turno</a>
                     </div>
                 </div>
+                </section>
+                
             );
         case 'noise':
             return (
-                <div className="flex flex-col justify-center w-full p-10 items-center space-y-3">
+                <section id="bottom">
+                    <div className="flex flex-col justify-center w-full p-10 items-center space-y-3">
                     <div className="inline-flex justify-center items-center w-full">
                         <hr className="my-8 w-64 h-px bg-gray-200 border-0 dark:bg-gray-700" />
                         <h1 className="text-2xl sm:text-6xl font-bold text-[#F36E21]">Whats that noise?</h1>
@@ -138,6 +150,8 @@ const Services = ({option}) => {
                         <a href="https://calendly.com/nacho-coppa/whats-that-noise" className="pointer-events-auto rounded-md bg-indigo-600 py-2 px-3 text-[1.5rem] font-semibold leading-5 text-white hover:bg-indigo-500">Reservar turno</a>
                     </div>
                 </div>
+                </section>
+                
             );
         default: return (
             <div className="flex flex-col justify-center w-full p-10 items-center space-y-3">
