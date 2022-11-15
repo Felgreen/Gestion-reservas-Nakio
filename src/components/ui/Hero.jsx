@@ -25,13 +25,13 @@ const Hero = () => {
             {" "}
             Tambien surfeo.
           </p>
-          <div className="border-transparent border-2 rounded flex flex-row flex-wrap justify-evenly items-center">
+          <div className="border-transparent  rounded flex flex-row flex-wrap md:justify-evenly items-center">
            <a href="#bottom">
-            <div className="w-40 md:w-72 max-w-sm rounded overflow-hidden shadow group shadow-slate-900 s p-4 m-4 hover:rounded-[50px] hover:shadow-slate-900  hover:scale-105  hover:bg-orange-400 hover:text-black ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="basic" onClick={() =>{handleOptions('basic');}}>
+            <div className="w-32 md:w-72 rounded overflow-hidden shadow group shadow-slate-900 s p-2 md:p-4 m-4 hover:rounded-[50px] hover:shadow-slate-900  hover:scale-105  hover:bg-orange-400 hover:text-black ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="basic" onClick={() =>{handleOptions('basic');}}>
                 {/* <Image src={Background} alt="card" /> */}
                 <div className="px-2 py-2 pb-5">
-                  <div className="font-bold text-sm md:text-xl mb-2 w-40 md:w-60 ">
-                  <h2 className= "text-lg md:text-2xl lg:text-4xl">Basic</h2>
+                  <div className="font-bold text-sm md:text-xl mb-2 mt-3 w-40 md:w-60 ">
+                     <h2 className= "text-lg md:text-2xl lg:text-4xl">Basic</h2>
                   </div>
                 </div>
                 <div className="px-2 pt-1 pb-1">
@@ -45,7 +45,7 @@ const Hero = () => {
               </div>
            </a>
            <a href="#bottom">
-            <div className=" w-40 md:w-72 max-w-sm rounded overflow-hidden shadow shadow-slate-900 p-4 m-4 hover:rounded-[50px] hover:shadow-slate-900  hover:scale-105  hover:bg-orange-400 group hover:text-black ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="extend" onClick={() => handleOptions('extend')}>
+            <div className=" w-32 md:w-72 max-w-sm rounded overflow-hidden shadow shadow-slate-900 p-4 m-4 hover:rounded-[50px] hover:shadow-slate-900  hover:scale-105  hover:bg-orange-400 group hover:text-black ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="extend" onClick={() => handleOptions('extend')}>
                 {/* <Image src={Background} alt="card" /> */}
                 <div className="px-2 py-2">
                   <div className="font-bold text-xl mb-2">
@@ -63,7 +63,7 @@ const Hero = () => {
               </div>
            </a>
             <a href="#bottom">
-              <div className="w-40 md:w-72 max-w-sm rounded overflow-hidden shadow shadow-slate-900 p-4 m-4 hover:rounded-[50px] group hover:shadow-slate-900  hover:scale-105  hover:bg-orange-400 hover:text-black ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="presell" onClick={() => handleOptions('presell')}>
+              <div className="w-32 md:w-72 max-w-sm rounded overflow-hidden shadow shadow-slate-900 p-4 m-4 hover:rounded-[50px] group hover:shadow-slate-900  hover:scale-105  hover:bg-orange-400 hover:text-black ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="presell" onClick={() => handleOptions('presell')}>
                 {/* <Image src={Background} alt="card" /> */}
                 <div className="px-2 py-2">
                   <div className="font-bold text-xl mb-2">
@@ -84,10 +84,10 @@ const Hero = () => {
               </div>
             </a>
            <a href="#bottom">
-            <div className="w-40 md:w-72 max-w-sm rounded overflow-hidden shadow shadow-slate-900 p-4 m-4 hover:rounded-[50px] group hover:shadow-slate-900  hover:scale-105  hover:bg-orange-400 hover:text-black ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="4wd" onClick={() => handleOptions('4wd')}>
+            <div className="w-32 md:w-72 max-w-sm rounded overflow-hidden shadow shadow-slate-900 p-2 m-4 hover:rounded-[50px] group hover:shadow-slate-900  hover:scale-105  hover:bg-orange-400 hover:text-black ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="4wd" onClick={() => handleOptions('4wd')}>
                 {/* <Image src={Background} alt="card" /> */}
                 <div className="px-2 py-2">
-                  <div className="font-bold text-xl mb-2">
+                  <div className="font-bold text-xl">
                     <h2 className="text-lg md:text-2xl lg:text-4xl" >4wd upgrade</h2>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ const Hero = () => {
               </div>
            </a>
            <a href="#bottom">
-            <div className=" w-40 md:w-72 max-w-sm rounded overflow-hidden shadow shadow-slate-900 p-4 m-4 hover:rounded-[50px] group hover:shadow-slate-900  hover:scale-105  hover:bg-orange-400 hover:text-black ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="noise" onClick={() => handleOptions('noise')}>
+            <div className=" w-32 md:w-72 max-w-sm rounded overflow-hidden shadow shadow-slate-900 p-4 m-4 hover:rounded-[50px] group hover:shadow-slate-900  hover:scale-105  hover:bg-orange-400 hover:text-black ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="noise" onClick={() => handleOptions('noise')}>
                 {/* <Image src={Background} alt="card" /> */}
                 <div className="px-2 py-2">
                   <div className="font-bold text-xl mb-2">
