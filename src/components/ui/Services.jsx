@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Services = ({option}) => {
     console.log(option)
 
@@ -30,7 +31,9 @@ const Services = ({option}) => {
                         <div>
                             <a href="https://calendly.com/nacho-coppa/basic-service" className="pointer-events-auto rounded-md bg-indigo-600 py-2 px-3 text-[1.5rem] font-semibold leading-5 text-white hover:bg-indigo-500">Reservar turno</a>
                         </div>
+                    
                     </div>
+                    
                 </section>
                );
         case 'extend':
