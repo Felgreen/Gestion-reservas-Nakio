@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <>
-    <section className="w-full bg-[#3B3C40]">
+    <section className="w-full bg-[#3B3C40]" id="top">
       <div className="mr-auto mt-3 px-6 flex flex-col justify-center h-full">
         <div className="space-y-3">
           <h1 className="text-2xl sm:text-6xl font-bold text-[#F36E21]">
