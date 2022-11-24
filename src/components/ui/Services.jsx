@@ -28,8 +28,8 @@ const Services = ({option}) => {
                             </ul>
                         </div>
                         <br></br>
-                        <div>
-                            <a href="https://calendly.com/nacho-coppa/basic-service" className="pointer-events-auto rounded-md bg-indigo-600 py-2 px-3 text-[1.5rem] font-semibold leading-5 text-white hover:bg-indigo-500">Reservar turno</a>
+                        <div className=" animate-bounce">
+                            <a href="https://calendly.com/nacho-coppa/basic-service" className="pointer-events-auto rounded-md bg-indigo-600 py-2 px-3 text-[1.5rem] font-semibold leading-5 text-white hover:bg-indigo-500 ">Reservar turno</a>
                         </div>
                     
                     </div>
@@ -60,7 +60,7 @@ const Services = ({option}) => {
                         </ul>
                     </div>
                     <br></br>
-                    <div>
+                    <div className=" animate-bounce">
                         <a href="https://calendly.com/nacho-coppa/extend-my-life-car" className="pointer-events-auto rounded-md bg-indigo-600 py-2 px-3 text-[1.5rem] font-semibold leading-5 text-white hover:bg-indigo-500">Reservar turno</a>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ const Services = ({option}) => {
                         </p>
                     </div>
                     <br></br>
-                    <div>
+                    <div className=" animate-bounce">
                         <a href="https://calendly.com/nacho-coppa/pre-sell-service" className="pointer-events-auto rounded-md bg-indigo-600 py-2 px-3 text-[1.5rem] font-semibold leading-5 text-white hover:bg-indigo-500">Reservar turno</a>
                     </div>
                 </div>
@@ -127,7 +127,7 @@ const Services = ({option}) => {
                         </ul>
                     </div>
                     <br></br>
-                    <div>
+                    <div className=" animate-bounce">
                         <a href="https://calendly.com/nacho-coppa/4wd-upgrade" className="pointer-events-auto rounded-md bg-indigo-600 py-2 px-3 text-[1.5rem] font-semibold leading-5 text-white hover:bg-indigo-500">Reservar turno</a>
                     </div>
                 </div>
@@ -149,7 +149,7 @@ const Services = ({option}) => {
                         </p>
                     </div>
                     <br></br>
-                    <div>
+                    <div className=" animate-bounce">
                         <a href="https://calendly.com/nacho-coppa/whats-that-noise" className="pointer-events-auto rounded-md bg-indigo-600 py-2 px-3 text-[1.5rem] font-semibold leading-5 text-white hover:bg-indigo-500">Reservar turno</a>
                     </div>
                 </div>
@@ -176,7 +176,7 @@ const Services = ({option}) => {
                     </ul>
                 </div>
                 <br></br>
-                <div>
+                <div className=" animate-pulse ">
                     <a href="https://calendly.com/nacho-coppa/basic-service" className="pointer-events-auto rounded-md bg-indigo-600 py-2 px-3 text-[1.5rem] font-semibold leading-5 text-white hover:bg-indigo-500">Reservar turno</a>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import Navbar from "components/ui/Navbar";
 import Hero from "components/ui/Hero";
-
-
+import Image from 'next/image'; 
+import arrow from './../public/assets/arrow.svg'; 
 
 
 
@@ -9,10 +9,15 @@ export default function Home() {
   return (
     <div className="flex flex-col scroll-smooth">
       <Navbar />
+      
       <section id="top">
         <Hero />
-        <div className=" flex  flex-1 p-4 justify-end"><a href="#top"><button class=" bg-orange-200 hover:bg-orange-300 text-black font-bold py-2 px-4 rounded-full">
-          Return</button></a></div>
+      
+        <div className="flex flex-1 p-6 justify-end"><a href="#top"><button class=" bg-orange-200  hover:bg-orange-300 text-black font-bold py-3 px-4 rounded-full">
+          <Image 
+          src={arrow}
+          alt='arrow'
+          className=""></Image></button></a></div>
       </section>
       {/* Boton horrible basico quiero poner un icono aca pero react-icons no funciona con next.js */}
      
