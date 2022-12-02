@@ -4,7 +4,7 @@
 
 @layer base {
     body{
-        @apply bg-[#3B3C40] text-white tracking-wide
+        @apply text-white tracking-wide
     }
 
     h1, h2,h3,h4,h5,h6 {
@@ -30,4 +30,10 @@
 html {
   scroll-behavior: smooth;
 
+}
+
+body {
+    background-image: url(../public/assets/beach.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }

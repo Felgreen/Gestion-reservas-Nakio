@@ -13,7 +13,7 @@ const Navbar = () => {
           width={50}
           height={50}
         />
-        <p className="text-2xl text-[#F36E21] ml-3">Hola Soy Nacho</p>
+        <p className="text-2xl text-white ml-3">Hola Soy Nacho</p>
       </div>
     </div>
   );

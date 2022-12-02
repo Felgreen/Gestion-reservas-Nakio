@@ -13,7 +13,7 @@ export default function Home() {
       <section id="top">
         <Hero />
       
-        <div className="flex flex-1 p-6 justify-end"><a href="#top"><button class=" bg-orange-200  hover:bg-orange-300 text-black font-bold py-3 px-4 rounded-full">
+        <div className="flex flex-1 p-6 justify-end"><a href="#top"><button class=" bg-[#d4b48d]  hover:bg-orange-300 text-black font-bold py-3 px-4 rounded-full">
           <Image 
           src={arrow}
           alt='arrow'
