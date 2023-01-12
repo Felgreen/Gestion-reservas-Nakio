@@ -16,99 +16,99 @@ const Hero = () => {
           <h1 className="text-2xl sm:text-6xl font-bold text-black">
             Arreglo autos y motos
           </h1>
-          <p className="text-2xl sm:text-4xl font-bold text-[#279788] max-w-[700px]">
+          <p className="text-2xl sm:text-4xl font-bold text-[#187ea9] max-w-[700px]">
             {" "}
             Tambien surfeo.
           </p>
           <div className="border-transparent rounded flex flex-row flex-wrap md:justify-evenly items-center">
            <a href="#bottom">
-            <div className="beach bg-cover w-32 md:w-72 rounded overflow-hidden shadow group shadow-slate-900 p-2 md:p-4 m-4 hover:rounded-[20px] hover:shadow-slate-900 hover:scale-105 hover:text-black ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="basic" onClick={() =>{handleOptions('basic');}}>
+            <div className="w-32 md:w-72 rounded overflow-hidden shadow group shadow-slate-900 p-2 md:p-4 m-4 hover:rounded-[20px] hover:scale-105 hover:text-white hover:bg-[#187ea973] ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="basic" onClick={() =>{handleOptions('basic');}}>
                 {/* <Image src={Background} alt="card" /> */}
                 <div className="px-2 py-2 pb-5">
                   <div className="font-bold text-sm md:text-xl mb-2 mt-3 w-40 md:w-60 ">
-                     <h2 className="text-black text-lg md:text-2xl lg:text-4xl">Basic</h2>
+                     <h2 className="text-lg md:text-2xl lg:text-4xl">Basic</h2>
                   </div>
                 </div>
                 <div className="px-2 pt-1 pb-1">
-                  <span className="text-black inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-xs md:text-sm font-semibold group-hover:text-black mr-2 mb-2">
+                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-xs md:text-sm font-semibold mr-2 mb-2">
                     Filters replacements
                   </span>
-                  <span className="text-black inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-xs md:text-sm font-semibold group-hover:text-black mr-2 mb-2">
+                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-xs md:text-sm font-semibold mr-2 mb-2">
                     Visual inspection
                   </span>
                 </div>
               </div>
            </a>
            <a href="#bottom">
-            <div className="beach bg-cover w-32 md:w-72 rounded overflow-hidden shadow shadow-slate-900 p-2 md:p-4 m-4 hover:rounded-[20px] hover:shadow-slate-900 hover:scale-105 group hover:text-black ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="extend" onClick={() => handleOptions('extend')}>
+            <div className="w-32 md:w-72 rounded overflow-hidden shadow shadow-slate-900 p-2 md:p-4 m-4 hover:rounded-[20px] hover:shadow-slate-900 hover:scale-105 hover:text-white hover:bg-[#187ea973] ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="extend" onClick={() => handleOptions('extend')}>
                 {/* <Image src={Background} alt="card" /> */}
                 <div className="px-2 py-2">
                   <div className="font-bold text-xl mb-2">
-                    <h2 className="text-black text-lg md:text-2xl lg:text-4xl">Extend car life</h2>
+                    <h2 className="text-lg md:text-2xl lg:text-4xl">Extend car life</h2>
                   </div>
                 </div>
                 <div className="px-2 pb-1">
-                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-xs md:text-sm font-semibold group-hover:text-black text-black mr-2 mb-2">
+                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-xs md:text-sm font-semibold  mr-2 mb-2">
                     Basic +
                   </span>
-                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-xs md:text-sm font-semibold group-hover:text-black text-black mr-2 mb-2">
+                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-xs md:text-sm font-semibold  mr-2 mb-2">
                     Deeper inspection
                   </span>
                 </div>
               </div>
            </a>
             <a href="#bottom">
-              <div className="beach bg-cover w-32 md:w-72 rounded overflow-hidden shadow shadow-slate-900 p-2 md:p-4 m-4 hover:rounded-[20px] hover:shadow-slate-900 hover:scale-105 group hover:text-black ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between"  name="presell" onClick={() => handleOptions('presell')}>
+              <div className="w-32 md:w-72 rounded overflow-hidden shadow shadow-slate-900 p-2 md:p-4 m-4 hover:rounded-[20px] hover:shadow-slate-900 hover:scale-105 hover:text-white hover:bg-[#187ea973] ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between"  name="presell" onClick={() => handleOptions('presell')}>
                 {/* <Image src={Background} alt="card" /> */}
                 <div className="px-2 py-2">
                   <div className="font-bold text-xl mb-2">
-                    <h2 className="text-black text-lg md:text-2xl lg:text-4xl">Pre sell</h2>
+                    <h2 className="text-lg md:text-2xl lg:text-4xl">Pre sell</h2>
                   </div>
                 </div>
                 <div className="px-2 pb-1">
-                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-xs md:text-sm font-semibold group-hover:text-black text-black mr-2 mb-2">
+                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-xs md:text-sm font-semibold  mr-2 mb-2">
                     Buyers portfolio
                   </span>
-                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-xs md:text-sm font-semibold group-hover:text-black text-black mr-2 mb-2">
+                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-xs md:text-sm font-semibold  mr-2 mb-2">
                     Deep wash
                   </span>
-                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-xs md:text-sm font-semibold group-hover:text-black text-black mr-2 mb-2">
+                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-xs md:text-sm font-semibold  mr-2 mb-2">
                     Roadside assitance
                   </span>
                 </div>
               </div>
             </a>
            <a href="#bottom">
-            <div className="beach bg-cover w-32 md:w-72 rounded overflow-hidden shadow shadow-slate-900  p-2 md:p-4 m-4 hover:rounded-[20px] group hover:shadow-slate-900 hover:scale-105 hover:text-black ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="4wd" onClick={() => handleOptions('4wd')}>
+            <div className="w-32 md:w-72 rounded overflow-hidden shadow shadow-slate-900 p-2 md:p-4 m-4 hover:rounded-[20px] hover:shadow-slate-900 hover:scale-105 hover:text-white hover:bg-[#187ea973] ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="4wd" onClick={() => handleOptions('4wd')}>
                 {/* <Image src={Background} alt="card" /> */}
                 <div className="px-2 py-2">
                   <div className="font-bold text-xl">
-                    <h2 className="text-black text-lg md:text-2xl lg:text-4xl">4wd upgrade</h2>
+                    <h2 className="text-lg md:text-2xl lg:text-4xl">4wd upgrade</h2>
                   </div>
                 </div>
                 <div className="px-2 pb-1">
-                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1  text-xs md:text-sm font-semibold group-hover:text-black text-black mr-2 mb-2">
+                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1  text-xs md:text-sm font-semibold  mr-2 mb-2">
                     Lift kits
                   </span>
-                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-xs md:text-sm font-semibold group-hover:text-black text-black mr-2 mb-2">
+                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-xs md:text-sm font-semibold  mr-2 mb-2">
                     Solar panels
                   </span>
-                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-xs md:text-sm font-semibold group-hover:text-black text-black mr-2 mb-2">
+                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-xs md:text-sm font-semibold  mr-2 mb-2">
                     Water storage
                   </span>
                 </div>
               </div>
            </a>
            <a href="#bottom">
-            <div className="beach bg-cover w-32 md:w-72 rounded overflow-hidden shadow shadow-slate-900 p-2 md:p-4 m-4 hover:rounded-[20px] group hover:shadow-slate-900 hover:scale-105 hover:text-black ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="noise" onClick={() => handleOptions('noise')}>
+            <div className="w-32 md:w-72 rounded overflow-hidden shadow shadow-slate-900 p-2 md:p-4 m-4 hover:rounded-[20px] hover:shadow-slate-900 hover:scale-105 hover:text-white hover:bg-[#187ea973] ease-in duration-300 max-w-[300px] h-[210px] flex flex-col justify-between" name="noise" onClick={() => handleOptions('noise')}>
                 {/* <Image src={Background} alt="card" /> */}
                 <div className="px-2 py-2">
                   <div className="font-bold text-xl mb-2">
-                    <h2 className="text-black text-lg md:text-2xl lg:text-4xl">What´s that noise?</h2>
+                    <h2 className="text-lg md:text-2xl lg:text-4xl">What´s that noise?</h2>
                   </div>
                 </div>
                 <div className="px-2 pb-1">
-                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-sm font-semibold group-hover:text-black text-black mr-2 mb-2">
+                  <span className="inline-block sm:text-xs bg-[#d4b48d] rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">
                     SOS fix
                   </span>
                 </div>
@@ -127,3 +127,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

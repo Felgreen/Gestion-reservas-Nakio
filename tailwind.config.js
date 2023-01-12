@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       backgroundImage: () => ({
         'hero':"url('/Background.png')",
-        'beach':"url('/beach.jpg')"
+        'beach':"url('/beach.webp')"
       }),
      
     },
