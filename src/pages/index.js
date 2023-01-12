@@ -17,26 +17,26 @@ export default function Home() {
         <div className="">
           <section id="home" className="bg-transparent">
             <div className="container px-4 mx-auto max-w-7xl">
-              <nav class="flex justify-between items-center py-8">
-                <a class="uppercase font-extrabold text-base py-2 rounded-full text-black" href="#">
-                  Nacho's <span class="font-light">mechanic house</span>
+              <nav className="flex justify-between items-center py-8">
+                <a className="uppercase font-extrabold text-base py-2 rounded-full text-black" href="#">
+                  Nacho's <span className="font-light">mechanic house</span>
                 </a>
-                <div class="lg:hidden">
-                  <button className="block navbar-burger text-[#E1CE7A] hover:text-[#BFAB52] focus:outline-none">
+                <div className="lg:hidden">
+                  <button className="block navbar-burger text-[#F36E21] hover:text-[#BFAB52] focus:outline-none">
                     <svg className="h-4 w-4" fill="currentColor " viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <title>Mobile menu</title>
                       <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
                     </svg>
                   </button>
                 </div>
-                <ul class="hidden lg:flex ml-auto mr-32 items-center w-auto space-x-12">
+                <ul className="hidden lg:flex ml-auto mr-32 items-center w-auto space-x-12">
                   <li>
-                    <a class="text-sm hover:text-[#BFAB52] font-medium" href="#home">
+                    <a className="text-sm hover:text-[#BFAB52] font-medium" href="#home">
                       Home
                     </a>
                   </li>
                   <li>
-                    <a class="text-sm hover:text-[#BFAB52] font-medium" href="#pricing">
+                    <a className="text-sm hover:text-[#BFAB52] font-medium" href="#pricing">
                       Pricing
                     </a>
                   </li>
@@ -50,7 +50,7 @@ export default function Home() {
                   </p>
                   <div>
                     <a
-                      className="block lg:inline-block px-5 py-3 lg:mr-3 mb-3 lg:mb-0 text-base lg:text-xl leading-loose lg:leading-loose text-center bg-[#E1CE7A] hover:bg-[#BFAB52] text-white hover:text-white rounded-full transition duration-200"
+                      className="block lg:inline-block px-5 py-3 lg:mr-3 mb-3 lg:mb-0 text-base lg:text-xl leading-loose lg:leading-loose text-center bg-[#F36E21] hover:bg-[#f36512] text-white hover:text-white rounded-full transition duration-200"
                       href="#"
                     >
                       INSTAGRAM
@@ -84,36 +84,36 @@ export default function Home() {
               <div className="flex flex-wrap items-center -mx-4 -mb-6 lg:mb-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <div className="w-full lg:w-1/3 px-4 mb-6 lg:mb-0">
                   <div className="p-6 md:p-12 bg-gray-50 rounded lg:text-center">
-                    <h3 className="text-2xl font-bold text-[#E1CE7A]">Basic</h3>
+                    <h3 className="text-2xl font-bold text-[#F36E21]">Basic</h3>
                     <span className="inline-block mb-6 text-4xl md:text-6xl font-bold font-heading">$34,99</span>
                     <ul className="mb-6 text-left text-lg">
                       <li className="mb-2 flex items-center">
-                        <svg className="mr-2 w-6 h-6 text-[#E1CE7A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <svg className="mr-2 w-6 h-6 text-[#F36E21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                         <p>Complete documentation</p>
                       </li>
                       <li className="mb-2 flex items-center">
-                        <svg className="mr-2 w-6 h-6 text-[#E1CE7A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <svg className="mr-2 w-6 h-6 text-[#F36E21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                         <p>Working materials in Figma</p>
                       </li>
                       <li className="mb-2 flex items-center">
-                        <svg className="mr-2 w-6 h-6 text-[#E1CE7A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <svg className="mr-2 w-6 h-6 text-[#F36E21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                         <p>100GB cloud storage</p>
                       </li>
                       <li className="mb-2 flex items-center">
-                        <svg className="mr-2 w-6 h-6 text-[#E1CE7A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <svg className="mr-2 w-6 h-6 text-[#F36E21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                         <p>500 team members</p>
                       </li>
                     </ul>
                     <a
-                      className="block w-full px-5 py-3 text-sm text-center bg-[#E1CE7A] hover:bg-[#BFAB52] text-white font-semibold border border-[#E1CE7A] hover:border-[#BFAB52] rounded-full transition duration-200"
+                      className="block w-full px-5 py-3 text-sm text-center bg-[#F36E21] hover:bg-[#BFAB52] text-white font-semibold border border-[#F36E21] hover:border-[#BFAB52] rounded-full transition duration-200"
                       href="#"
                     >
                       Action
@@ -121,43 +121,43 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="w-full lg:w-1/3 px-4 mb-6 lg:mb-0">
-                  <div className="p-6 md:p-12 bg-transparent rounded-{border-radius} shadow-lg border-2 border-[#E1CE7A] lg:text-center">
-                    <h3 className="text-2xl font-bold text-[#E1CE7A]">Basic pro</h3>
+                  <div className="p-6 md:p-12 bg-transparent rounded-{border-radius} shadow-lg border-2 border-[#F36E21] lg:text-center">
+                    <h3 className="text-2xl font-bold text-[#F36E21]">Basic pro</h3>
                     <span className="inline-block mb-6 text-4xl md:text-6xl font-bold">$65,99</span>
                     <ul className="mb-6 text-left text-lg">
                       <li className="mb-2 flex items-center">
-                        <svg className="mr-2 w-6 h-6 text-[#E1CE7A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <svg className="mr-2 w-6 h-6 text-[#F36E21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                         <p className="text-lg">Complete documentation</p>
                       </li>
                       <li className="mb-2 flex items-center">
-                        <svg className="mr-2 w-6 h-6 text-[#E1CE7A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <svg className="mr-2 w-6 h-6 text-[#F36E21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                         <p className="text-lg">Working materials in Figma</p>
                       </li>
                       <li className="mb-2 flex items-center">
-                        <svg className="mr-2 w-6 h-6 text-[#E1CE7A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <svg className="mr-2 w-6 h-6 text-[#F36E21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                         <p className="text-lg">100GB cloud storage</p>
                       </li>
                       <li className="mb-2 flex items-center">
-                        <svg className="mr-2 w-6 h-6 text-[#E1CE7A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <svg className="mr-2 w-6 h-6 text-[#F36E21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                         <p className="text-lg">500 team members</p>
                       </li>
                       <li className="mb-2 flex items-center">
-                        <svg className="mr-2 w-6 h-6 text-[#E1CE7A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <svg className="mr-2 w-6 h-6 text-[#F36E21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                         <p className="text-lg">Premium support</p>
                       </li>
                     </ul>
                     <a
-                      className="block w-full px-5 py-3 text-sm text-center bg-[#E1CE7A] hover:bg-[#BFAB52] text-white font-semibold border border-[#E1CE7A] hover:border-[#BFAB52] rounded-full transition duration-200"
+                      className="block w-full px-5 py-3 text-sm text-center bg-[#F36E21] hover:bg-[#BFAB52] text-white font-semibold border border-[#F36E21] hover:border-[#BFAB52] rounded-full transition duration-200"
                       href="#"
                     >
                       Action
@@ -166,36 +166,36 @@ export default function Home() {
                 </div>
                 <div className="w-full lg:w-1/3 px-4">
                   <div className="p-6 md:p-12 bg-gray-50 rounded lg:text-center">
-                    <h3 className="text-2xl font-bold text-[#E1CE7A]">Extend car life</h3>
+                    <h3 className="text-2xl font-bold text-[#F36E21]">Extend car life</h3>
                     <span className="inline-block mb-6 text-4xl md:text-6xl font-bold font-heading">$99,99</span>
                     <ul className="mb-6 text-left text-lg">
                       <li className="mb-2 flex items-center">
-                        <svg className="mr-2 w-6 h-6 text-[#E1CE7A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <svg className="mr-2 w-6 h-6 text-[#F36E21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                         <p>Complete documentation</p>
                       </li>
                       <li className="mb-2 flex items-center">
-                        <svg className="mr-2 w-6 h-6 text-[#E1CE7A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <svg className="mr-2 w-6 h-6 text-[#F36E21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                         <p>Working materials in Figma</p>
                       </li>
                       <li className="mb-2 flex items-center">
-                        <svg className="mr-2 w-6 h-6 text-[#E1CE7A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <svg className="mr-2 w-6 h-6 text-[#F36E21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                         <p>100GB cloud storage</p>
                       </li>
                       <li className="mb-2 flex items-center">
-                        <svg className="mr-2 w-6 h-6 text-[#E1CE7A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <svg className="mr-2 w-6 h-6 text-[#F36E21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                         <p>500 team members</p>
                       </li>
                     </ul>
                     <a
-                      className="block w-full px-5 py-3 text-sm text-center bg-[#E1CE7A] hover:bg-[#BFAB52] text-white font-semibold border border-[#E1CE7A] hover:border-[#BFAB52] rounded-full transition duration-200"
+                      className="block w-full px-5 py-3 text-sm text-center bg-[#F36E21] hover:bg-[#BFAB52] text-white font-semibold border border-[#F36E21] hover:border-[#BFAB52] rounded-full transition duration-200"
                       href="#"
                     >
                       Action
