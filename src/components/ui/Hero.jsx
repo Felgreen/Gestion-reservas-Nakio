@@ -10,7 +10,6 @@ const Hero = () => {
 
   return (
     <>
-    <section className="w-full" id="top">
       <div className="mr-auto mt-3 px-6 flex flex-col justify-center h-full">
         <div className="space-y-3">
           <h1 className="text-2xl sm:text-6xl font-bold text-black">
@@ -118,10 +117,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-    {
-      option ? <Services option={option} /> : <Services option={'ejemplo1'}/>
-    }
     </>
   );
 };
