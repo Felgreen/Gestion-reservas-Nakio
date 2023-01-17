@@ -12,14 +12,12 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import { Pagination, Navigation } from 'swiper'
 
-
-
 export default function Home() {
   const [width, setWidth] = useState(false)
 
   useEffect(() => {
     console.log(window.innerWidth)
-    if(window.innerWidth < 500) setWidth(true)
+    if (window.innerWidth < 500) setWidth(true)
   })
   return (
     // <div className="flex flex-col scroll-smooth">
@@ -50,7 +48,7 @@ export default function Home() {
             </div>
           </nav>
           <div className="container px-4 mx-auto max-w-7xl">
-            <div className="flex flex-wrap items-center -mx-4 mt-10 lg:my-10 pb-10 lg:pb-16 flex-col-reverse md:flex-row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <div className="flex flex-wrap items-center -mx-4 mt-10 lg:my-10 md:pb-10 lg:pb-16 flex-col-reverse md:flex-row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
               <div className="w-full md:w-1/2 px-4 mb-12 md:mb-0">
                 <h1 className="max-w-sm uppercase mb-8 text-3xl leading-tight md:text-4xl md:leading-tight lg:text-7xl lg:leading-tight font-bold text-[#00182Bff]">Hi, I'm Nacho</h1>
                 <p className="max-w-lg mb-8 text-lg lg:text-2xl leading-loose lg:leading-loose text-gray-500">
@@ -71,18 +69,19 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <div className="w-full md:w-2/5 px-4 mb-12 md:mb-0">
-                <Image className="object-cover w-full h-80 md:h-auto md:w-full rounded-2xl" src={mechanic} alt="/" />
-                <Image className="object-cover w-full h-80 md:h-auto md:w-full rounded-2xl" src={beach} alt="/" />
+              <div className="flex md:flex-col w-10/12 md:w-2/5 mb-2">
+                <div className="w-full mr-2">
+                  <Image className="object-cover h-80 md:h-auto md:w-full rounded-2xl" src={mechanic} alt="/" />
+                </div>
+                <div className="w-full ml-2">
+                  <Image className="object-cover h-80 md:h-auto md:w-full rounded-2xl" src={beach} alt="/" />
+                </div>
               </div>
             </div>
           </div>
         </section>
         <section id="pricing" className="">
-          <h2 className="mb-6 text-center text-6xl md:text-7xl xl:text-10xl font-bold font-heading leading-none mx-auto">Book your service</h2>
-          <p className="mb-20 text-lg text-gray-900 text-center font-medium leading-normal md:max-w-lg mx-auto">
-            This are all the services i provide. You can see the detail of each service and the minimum price. Choosse the one that fits your needs.
-          </p>
+          <h2 className="mb-10 text-center text-6xl md:text-7xl xl:text-10xl font-bold font-heading leading-none mx-auto">Book your service</h2>
           <div className="flex flex-row container px-4 mx-auto">
             <Swiper
               slidesPerView={width ? 1 : 3}
@@ -101,7 +100,7 @@ export default function Home() {
                 <div className="md:max-w-4xl mx-auto">
                   <div className="flex flex-wrap -m-5">
                     <div className="w-full md:w-96 p-5">
-                      <div className="bg-white bg-opacity-90 border border-blueGray-100 rounded-xl shadow-2xl">
+                      <div className="bg-white bg-opacity-90 border border-blueGray-100 rounded-xl shadow-xl">
                         <div className="border-b border-blueGray-100">
                           <div className="py-7 px-9">
                             <h3 className="mb-3 text-2xl text-[#005C76ff] font-bold leading-snug">Basic</h3>
@@ -166,7 +165,9 @@ export default function Home() {
                             <span>Starting from</span>
                             <span className="text-gray-900"> $49</span>
                           </p>
-                          <a className="block w-full px-5 py-3 text-sm text-center bg-[#5a98c7] hover:bg-[#005C76ff] text-white font-semibold border border-[#5a98c7] hover:border-[#005C76ff] rounded-full transition duration-200">Book</a>
+                          <a className="block w-full px-5 py-3 text-sm text-center bg-[#5a98c7] hover:bg-[#005C76ff] text-white font-semibold border border-[#5a98c7] hover:border-[#005C76ff] rounded-full transition duration-200">
+                            Book
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -264,7 +265,9 @@ export default function Home() {
                             <span>Starting from</span>
                             <span className="text-gray-900"> $49</span>
                           </p>
-                          <a className="block w-full px-5 py-3 text-sm text-center bg-[#5a98c7] hover:bg-[#005C76ff] text-white font-semibold border border-[#5a98c7] hover:border-[#005C76ff] rounded-full transition duration-200">Book</a>
+                          <a className="block w-full px-5 py-3 text-sm text-center bg-[#5a98c7] hover:bg-[#005C76ff] text-white font-semibold border border-[#5a98c7] hover:border-[#005C76ff] rounded-full transition duration-200">
+                            Book
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -328,7 +331,9 @@ export default function Home() {
                             <span>Starting from</span>
                             <span className="text-gray-900"> $49</span>
                           </p>
-                          <a className="block w-full px-5 py-3 text-sm text-center bg-[#5a98c7] hover:bg-[#005C76ff] text-white font-semibold border border-[#5a98c7] hover:border-[#005C76ff] rounded-full transition duration-200">Book</a>
+                          <a className="block w-full px-5 py-3 text-sm text-center bg-[#5a98c7] hover:bg-[#005C76ff] text-white font-semibold border border-[#5a98c7] hover:border-[#005C76ff] rounded-full transition duration-200">
+                            Book
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -438,7 +443,9 @@ export default function Home() {
                             <span>Starting from</span>
                             <span className="text-gray-900"> $49</span>
                           </p>
-                          <a className="block w-full px-5 py-3 text-sm text-center bg-[#5a98c7] hover:bg-[#005C76ff] text-white font-semibold border border-[#5a98c7] hover:border-[#005C76ff] rounded-full transition duration-200">Book</a>
+                          <a className="block w-full px-5 py-3 text-sm text-center bg-[#5a98c7] hover:bg-[#005C76ff] text-white font-semibold border border-[#5a98c7] hover:border-[#005C76ff] rounded-full transition duration-200">
+                            Book
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -461,7 +468,9 @@ export default function Home() {
                             <span>Starting from</span>
                             <span className="text-gray-900"> $49</span>
                           </p>
-                          <a className="block w-full px-5 py-3 text-sm text-center bg-[#5a98c7] hover:bg-[#005C76ff] text-white font-semibold border border-[#5a98c7] hover:border-[#005C76ff] rounded-full transition duration-200">Book</a>
+                          <a className="block w-full px-5 py-3 text-sm text-center bg-[#5a98c7] hover:bg-[#005C76ff] text-white font-semibold border border-[#5a98c7] hover:border-[#005C76ff] rounded-full transition duration-200">
+                            Book
+                          </a>
                         </div>
                       </div>
                     </div>

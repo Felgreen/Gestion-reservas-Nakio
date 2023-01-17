@@ -74,3 +74,9 @@ body {
     -webkit-align-items: center;
     align-items: center;
   }
+
+  @media (max-width: 500px) {
+    .swiper-slide {
+        padding-bottom: 0px;
+    }
+  }
