@@ -5,26 +5,22 @@ import arrow from './../public/assets/arrow.svg'
 import mechanic from '../public/assets/mechanic.webp'
 import beach from '../public/assets/beach.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { useEffect, useState } from 'react'
 
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import { Pagination, Navigation } from 'swiper'
 
-let obj = {
-  'steel-blue': '#4A7CA3ff',
-  umber: '#5E493Fff',
-  timberwolf: '#DAD5D2ff',
-  'dark-slate-gray': '#314D49ff',
-  'myrtle-green': '#2B7471ff',
-  'oxford-blue': '#00182Bff',
-  'blue-sapphire': '#005C76ff',
-  'metallic-seaweed': '#00828Bff',
-  'laurel-green': '#A7BAA6ff',
-  'rifle-green': '#4D4E3Aff',
-}
+
 
 export default function Home() {
+  const [width, setWidth] = useState(false)
+
+  useEffect(() => {
+    console.log(window.innerWidth)
+    if(window.innerWidth < 500) setWidth(true)
+  })
   return (
     // <div className="flex flex-col scroll-smooth">
     //   <Navbar />
@@ -89,10 +85,10 @@ export default function Home() {
           </p>
           <div className="flex flex-row container px-4 mx-auto">
             <Swiper
-              slidesPerView={3}
+              slidesPerView={width ? 1 : 3}
               spaceBetween={30}
-              slidesPerGroup={3}
-              loop={true}
+              slidesPerGroup={width ? 1 : 3}
+              loop={false}
               loopFillGroupWithBlank={true}
               pagination={{
                 clickable: true,
@@ -118,7 +114,7 @@ export default function Home() {
                           <p className="mb-6 text-gray-600 font-medium leading-relaxed">Features included:</p>
                           <ul className="mb-4">
                             <li className="mb-4 flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -130,7 +126,7 @@ export default function Home() {
                               <p className="font-semibold leading-normal">Oil & Oil filter change</p>
                             </li>
                             <li className="mb-4 flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -142,7 +138,7 @@ export default function Home() {
                               <p className="font-semibold leading-normal">Air filter replacement</p>
                             </li>
                             <li className="mb-4 flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -154,7 +150,7 @@ export default function Home() {
                               <p className="font-semibold leading-normal">Fuel filter replacement</p>
                             </li>
                             <li className="mb-4 flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -192,7 +188,7 @@ export default function Home() {
                           <p className="mb-6 text-gray-600 font-medium leading-relaxed">Features included:</p>
                           <ul className="mb-4">
                             <li className="mb-4 flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -204,7 +200,7 @@ export default function Home() {
                               <p className="font-semibold leading-normal">Basic service</p>
                             </li>
                             <li className="mb-4 flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -216,7 +212,7 @@ export default function Home() {
                               <p className="font-semibold leading-normal">Fuel injector cleaning</p>
                             </li>
                             <li className="mb-4 flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -228,7 +224,7 @@ export default function Home() {
                               <p className="font-semibold leading-normal">Oil flush</p>
                             </li>
                             <li className="mb-4 flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -240,7 +236,7 @@ export default function Home() {
                               <p className="font-semibold leading-normal">Tire pressure</p>
                             </li>
                             <li className="mb-4 flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -252,7 +248,7 @@ export default function Home() {
                               <p className="font-semibold leading-normal">Belt check</p>
                             </li>
                             <li className="flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -292,7 +288,7 @@ export default function Home() {
                           <p className="mb-6 text-gray-600 font-medium leading-relaxed">Features included:</p>
                           <ul className="mb-4">
                             <li className="mb-4 flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -304,7 +300,7 @@ export default function Home() {
                               <p className="font-semibold leading-normal">Engine bay wash</p>
                             </li>
                             <li className="mb-4 flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -316,7 +312,7 @@ export default function Home() {
                               <p className="font-semibold leading-normal">Dent removal</p>
                             </li>
                             <li className="mb-4 flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -354,7 +350,7 @@ export default function Home() {
                           <p className="mb-6 text-gray-600 font-medium leading-relaxed">Features included:</p>
                           <ul className="mb-4">
                             <li className="mb-4 flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -366,7 +362,7 @@ export default function Home() {
                               <p className="font-semibold leading-normal">Awnings</p>
                             </li>
                             <li className="mb-4 flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -378,7 +374,7 @@ export default function Home() {
                               <p className="font-semibold leading-normal">Solar panels</p>
                             </li>
                             <li className="mb-4 flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -390,7 +386,7 @@ export default function Home() {
                               <p className="font-semibold leading-normal">External battery</p>
                             </li>
                             <li className="mb-4 flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -402,7 +398,7 @@ export default function Home() {
                               <p className="font-semibold leading-normal">Water storage</p>
                             </li>
                             <li className="mb-4 flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -414,7 +410,7 @@ export default function Home() {
                               <p className="font-semibold leading-normal">Lift kits</p>
                             </li>
                             <li className="mb-4 flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
@@ -426,7 +422,7 @@ export default function Home() {
                               <p className="font-semibold leading-normal">Heavy duty suspension</p>
                             </li>
                             <li className="flex items-center">
-                              <svg className="mr-2" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
                                   stroke="#4F46E5"
